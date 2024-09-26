@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciamento de Biblioteca</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./src/styles.css">
 </head>
 <body>
-    <h1>Gerenciamento de Biblioteca</h1>
-    <form id="form-livro">
-        <input type="text" id="titulo" placeholder="Título" required>
-        <input type="text" id="autor" placeholder="Autor" required>
-        <input type="number" id="ano" placeholder="Ano de Publicação" required>
-        <input type="text" id="genero" placeholder="Gênero" required>
-        <button type="submit">Adicionar Livro</button>
-    </form>
-    <ul id="lista-livros"></ul>
+    <img class="foto" src="./src/imagens/FotoBiblioteca.jpg" alt="Foto de Fundo">
+    <div class="container">
+        <h1>Gerenciamento de Biblioteca</h1>
+        <form id="form-livro">
+            <div>
+                <input type="text" id="titulo" placeholder="Título" required>
+            </div>
+            <div>
+                <input type="text" id="autor" placeholder="Autor" required>
+            </div>
+            <div>
+                <input type="number" id="ano" placeholder="Ano de Publicação" required>
+            </div>
+            <div>
+                <input type="text" id="genero" placeholder="Gênero" required>
+            </div>
+            <button class="botao" type="submit">Adicionar Livro</button>
+        </form>
 
-    <script src="script.js"></script>
+        <button id="exibir-livros" class="botao livro">Exibir Livros</button>
+        <ul id="lista-livros" class="livros-exibidos"></ul>
+
+    </div>
+    
+    <script src="./src/script.js"></script>
 </body>
 </html>
